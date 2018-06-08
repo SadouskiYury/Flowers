@@ -51,7 +51,7 @@ public class Main {
 		//Bouquet flowerSort=new Bouquet(8);
 		
 		BouquetPart[] find=flower.findeFlowerSizeLeavesBetween(3, 10);
-		System.out.print(Arrays.toString(find)+"\n");
+		System.out.print(Arrays.toString(find));
 		//flowers.showBouquet();
 //		flower.sortBouquet();
 //		flower.showBouquet();

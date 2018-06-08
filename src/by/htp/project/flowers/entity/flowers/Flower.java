@@ -7,12 +7,12 @@ public class Flower extends BouquetPart {
 	protected int sizeLeaves;
 
 	public Flower() {
-
+		
 	}
 
-	public Flower(String name, String color, int sizeLeaves, double price) {
+	public Flower(String name1, String color, int sizeLeaves, double price) {
 		super(price, color);
-		this.name = name;
+		this.name = name1;
 		this.sizeLeaves = sizeLeaves;
 
 	}
