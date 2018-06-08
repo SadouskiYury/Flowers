@@ -7,6 +7,7 @@ public class FlowerImitation extends Flower {
 		super();
 	};
 
+	
 	public FlowerImitation(String name, String color, int sizeLeaves, double price, String type) {
 		super(name, color, sizeLeaves, price);
 		this.type = type;
