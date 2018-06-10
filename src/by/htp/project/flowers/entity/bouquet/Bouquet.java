@@ -1,6 +1,7 @@
 package by.htp.project.flowers.entity.bouquet;
 
 import java.util.Arrays;
+import java.util.Date;
 
 import by.htp.project.flowers.entity.flowers.Flower;
 import by.htp.project.flowers.entity.flowers.FlowerReal;
@@ -83,14 +84,16 @@ public class Bouquet {
 	public void sortBouquet() {
 		for (int i = 0; i < bouquets.length; i++) {
 			for (int j = i + 1; j < bouquets.length; j++) {
-				// if ((bouquets[i].getClass(Flower.class).getClass(FlowerReal.class))) {
 				if (bouquets[j].getClass().equals(FlowerReal.class)) {
-					if (((FlowerReal) bouquets[i]).getDateCut().before(((FlowerReal) bouquets[j]).getDateCut())) {
-						System.out.println("uefhhwc");
+
+					if (((FlowerReal) bouquets[j]).getDateCut()
+							.compareTo(((FlowerReal) bouquets[i]).getDateCut()) < 0) {
+
 						BouquetPart[] tmp = new BouquetPart[1];
 						tmp[0] = bouquets[i];
 						bouquets[i] = bouquets[j];
 						bouquets[j] = tmp[0];
+
 					}
 				}
 			}

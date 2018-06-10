@@ -7,7 +7,6 @@ public class FlowerImitation extends Flower {
 		super();
 	};
 
-	
 	public FlowerImitation(String name, String color, int sizeLeaves, double price, String type) {
 		super(name, color, sizeLeaves, price);
 		this.type = type;
@@ -24,7 +23,7 @@ public class FlowerImitation extends Flower {
 
 	@Override
 	public String toString() {
-		return "FlowerImitation" + super.toString() + ", type=" + type+"]";
+		return "FlowerImitation" + super.toString() + ", type=" + type + "]";
 	}
 
 }

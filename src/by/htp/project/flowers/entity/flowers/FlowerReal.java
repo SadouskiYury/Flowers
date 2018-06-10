@@ -11,10 +11,10 @@ public class FlowerReal extends Flower {
 		super();
 	}
 
-	public FlowerReal(String name, String color, int sizeLeaves, double price,  String smell, Date dateCut) {
+	public FlowerReal(String name, String color, int sizeLeaves, double price, String smell, Date dateCut) {
 		super(name, color, sizeLeaves, price);
 		this.smell = smell;
-		this.dateCut= dateCut;
+		this.dateCut = dateCut;
 	}
 
 	public String getSmell() {
@@ -25,7 +25,6 @@ public class FlowerReal extends Flower {
 		this.smell = smell;
 	}
 
-	
 	public Date getDateCut() {
 		return dateCut;
 	}
@@ -36,7 +35,8 @@ public class FlowerReal extends Flower {
 
 	@Override
 	public String toString() {
-		return "FlowerReal" +super.toString()+", smell=" + smell + ", dateCut=" + new SimpleDateFormat("dd.MM.yy").format(dateCut)+"]";
+		return "FlowerReal" + super.toString() + ", smell=" + smell + ", dateCut="
+				+ new SimpleDateFormat("dd.MM.yy").format(dateCut) + "]";
 	}
 
 }

@@ -1,17 +1,16 @@
 package by.htp.project.flowers.entity.bouquet;
 
-
 public class BouquetPart extends Bouquet {
 	private double price;
 	private String color;
 
 	public BouquetPart() {
-	
+
 	}
 
-	public BouquetPart(double price,String color) {
+	public BouquetPart(double price, String color) {
 		this.price = price;
-		this.color=color;
+		this.color = color;
 	}
 
 	public double getPrice() {
@@ -32,7 +31,7 @@ public class BouquetPart extends Bouquet {
 
 	@Override
 	public String toString() {
-		return ", price=" + price + " ,color="+color;
+		return ", price=" + price + " ,color=" + color;
 	}
 
 }

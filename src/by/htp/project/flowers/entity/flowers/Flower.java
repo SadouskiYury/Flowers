@@ -7,7 +7,7 @@ public class Flower extends BouquetPart {
 	protected int sizeLeaves;
 
 	public Flower() {
-		
+
 	}
 
 	public Flower(String name1, String color, int sizeLeaves, double price) {
@@ -24,7 +24,6 @@ public class Flower extends BouquetPart {
 	public void setName(String name) {
 		this.name = name;
 	}
-
 
 	public int getSizeLeaves() {
 		return sizeLeaves;

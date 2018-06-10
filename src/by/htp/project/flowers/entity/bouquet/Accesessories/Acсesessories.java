@@ -23,10 +23,9 @@ public class Acсesessories extends BouquetPart {
 		this.material = material;
 	}
 
-	
 	@Override
 	public String toString() {
-		return ", material=" + material + super.toString();
+		return ", material=" + material + super.toString() + "]";
 	}
 
 }
